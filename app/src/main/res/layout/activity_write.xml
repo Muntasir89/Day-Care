@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back"
+    tools:context=".Activity.WriteNewsAct">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_background"
+        style="@style/ToolBarStyle.Event">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write News"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/WriteAccost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/georamabold"
+        android:textColor="@color/dark"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Hello Everyone"/>
+    <EditText
+        android:id="@+id/WriteDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WriteAccost"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/georamabold"
+        android:textColor="@color/dark"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:hint="Enter details here..."/>
+    <Button
+        android:id="@+id/PostNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WriteDetails"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:text="Post News"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/btn_style"
+        android:layout_centerHorizontal="true"
+        android:foreground="@drawable/ripple_card"/>
+</RelativeLayout>

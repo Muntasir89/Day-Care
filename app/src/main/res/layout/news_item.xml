@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="10dp"
+    android:background="@color/light"
+    android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/Accost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Hello Everyone"
+        android:textSize="15sp"
+        android:textColor="@color/light"/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="21 December 21"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/light"/>
+
+    <TextView
+        android:id="@+id/Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="This is the message..."
+        android:textSize="15sp"
+        android:textColor="@color/light"/>
+</androidx.cardview.widget.CardView>
